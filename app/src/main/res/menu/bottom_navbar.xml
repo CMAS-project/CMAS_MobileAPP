@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/location"
+        android:title="@string/location"
+        android:icon="@drawable/ic_location"/>
+
+    <item
+        android:id="@+id/fab"
+        android:title=""
+        android:enabled="false"/>
+
+    <item
+        android:id="@+id/chatbot"
+        android:title="@string/chatbot"
+        android:iconTint="@color/white"
+        android:icon="@drawable/ic_chat"/>
+
+    <item
+        android:id="@+id/reflection"
+        android:iconTint="@color/white"
+        android:title="@string/reflection"
+        android:icon="@drawable/ic_reflection"/>
+
+</menu>

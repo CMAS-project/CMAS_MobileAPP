@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CMAS</string>
+    <string name="yuk_join">Yuk Join!</string>
+
+    <string name="chat">Apakah kamu merasa stres?</string>
+    <string name="find">Cari Konsultan?</string>
+    <string name="scan">Pindai Wajahmu</string>
+
+    <string name="chat_desc">Ayo, ceritakan permasalahanmu sekarang. Chatbot kami siap membantu kamu dan memberikan dukungan yang tepat.</string>
+    <string name="find_desc">Rekomendasi lokasi konsultan, rumah sakit, dan psikiater terdekat dari lokasimu. </string>
+    <string name="scan_desc">Dengan hanya memindai wajah Anda, aplikasi akan menganalisis pola EEG dan memberikan informasi yang relevan terkait kesehatan mental Anda.</string>
+
+
+    <string name="next">Selanjutnya</string>
+    <string name="home">Home</string>
+    <string name="location">Cek Lokasi</string>
+    <string name="chatbot">Chatbot</string>
+    <string name="reflection">Reflection</string>
+
+    <string name="please_activate_location_message">Yuk aktifkan fitur lokasi di hp mu</string>
+    <string name="login">Masuk</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="logo">logo</string>
+    <string name="havent_account">Kamu belum daftar?</string>
+    <string name="sign_up">Yuk daftar</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="already_have_account">Kamu udah punya akun?</string>
+    <string name="yuk_masuk">Yuk Masuk</string>
+
+
+</resources>
