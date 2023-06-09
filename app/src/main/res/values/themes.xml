@@ -3,7 +3,7 @@
     <style name="Base.Theme.CMAS" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
          <item name="colorPrimary">@color/blue_200</item>
-         <item name="colorPrimaryVariant">@color/blue_700</item>
+         <item name="colorPrimaryVariant">@color/blue_500</item>
          <item name="colorOnPrimary">@color/white</item>
 
          <item name="colorSecondary">@color/blue_500</item>

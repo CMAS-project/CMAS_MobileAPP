@@ -6,6 +6,10 @@
     android:background="@color/white"
     tools:context=".ui.home.HomeFragment">
 
+    <include
+        layout="@layout/custom_home_toolbar"
+        android:id="@+id/toolbar"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

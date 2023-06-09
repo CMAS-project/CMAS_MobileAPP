@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/cmas_logo_tok"
+        android:layout_marginStart="27dp"/>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_user"
+        android:contentDescription="@string/profile"
+        android:layout_gravity="end"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:tint="@color/blue_500" />
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_notifications"
+        android:contentDescription="@string/notification"
+        android:layout_gravity="end"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+</androidx.appcompat.widget.Toolbar>

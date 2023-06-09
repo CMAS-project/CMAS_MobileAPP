@@ -25,7 +25,7 @@
     <item
         android:id="@+id/reflection"
         android:iconTint="@color/white"
-        android:title="@string/reflection"
+        android:title="@string/article"
         android:icon="@drawable/ic_reflection"/>
 
 </menu>

@@ -49,7 +49,7 @@
         tools:layout="@layout/activity_main" />
     <fragment
         android:id="@+id/registrationFragment"
-        android:name="com.capstone.bangkit.cmas.RegistrationFragment"
+        android:name="com.capstone.bangkit.cmas.ui.registration.RegistrationFragment"
         android:label="fragment_registration"
         tools:layout="@layout/fragment_registration" >
         <action

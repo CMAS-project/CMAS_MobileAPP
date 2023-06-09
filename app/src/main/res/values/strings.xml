@@ -15,7 +15,9 @@
     <string name="home">Home</string>
     <string name="location">Cek Lokasi</string>
     <string name="chatbot">Chatbot</string>
-    <string name="reflection">Reflection</string>
+    <string name="article">Article</string>
+    <string name="notification">Notifikasi</string>
+    <string name="profile">Profil</string>
 
     <string name="please_activate_location_message">Yuk aktifkan fitur lokasi di hp mu</string>
     <string name="login">Masuk</string>
@@ -24,10 +26,14 @@
     <string name="logo">logo</string>
     <string name="havent_account">Kamu belum daftar?</string>
     <string name="sign_up">Yuk daftar</string>
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="already_have_account">Kamu udah punya akun?</string>
     <string name="yuk_masuk">Yuk Masuk</string>
 
+    <string-array name="gender_array">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
 
 </resources>
