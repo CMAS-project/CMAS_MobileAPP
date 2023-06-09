@@ -46,5 +46,14 @@ class HomeActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.frame_layout, fragment)
             .commit()
+
+//        val itemId = when (fragment) {
+//            is HomeFragment -> R.id.home
+//            is MapsFragment -> R.id.location
+//            is ChatbotFragment -> R.id.chatbot
+//            is ReflectionFragment -> R.id.reflection
+//            else -> throw IllegalArgumentException("Unknown Fragment: ${fragment.javaClass.simpleName}")
+//        }
+//        binding.bottomNavView.selectedItemId = itemId
     }
 }

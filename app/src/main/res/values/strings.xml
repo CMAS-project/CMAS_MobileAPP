@@ -15,12 +15,11 @@
     <string name="find_desc">Rekomendasi lokasi konsultan, rumah sakit, dan psikiater terdekat dari lokasimu. </string>
     <string name="scan_desc">Dengan hanya memindai wajah Anda, aplikasi akan menganalisis pola EEG dan memberikan informasi yang relevan terkait kesehatan mental Anda.</string>
 
-
     <string name="next">Selanjutnya</string>
     <string name="home">Home</string>
     <string name="location">Cek Lokasi</string>
     <string name="chatbot">Chatbot</string>
-    <string name="article">Article</string>
+    <string name="article">Artikel</string>
     <string name="notification">Notifikasi</string>
     <string name="profile">Profil</string>
 
@@ -48,4 +47,8 @@
 
     <string name="about_us_desc">Aplikasi CMAS (Cari, Menerima, Antisipasi, Sembuh) merupakan sebuah inisiatif yang bertujuan untuk mengatasi masalah kesehatan mental di Indonesia. Menyadari tingginya angka prevalensi masalah kesehatan mental dan depresi di negara ini, kami ingin memberikan solusi dengan menyediakan aksesibilitas yang lebih luas bagi masyarakat. CMAS hadir dengan visi untuk menghilangkan stigma negatif terkait dengan masalah kesehatan mental, karena kami percaya bahwa tidak ada yang seharusnya malu dalam menghadapinya. Melalui aplikasi ini, kami menyediakan informasi dan sumber daya yang berguna tentang cara menghadapi dan mengelola masalah kesehatan mental, terutama dalam hal kecemasan dan depresi. Dengan demikian, CMAS bertujuan untuk memberikan dukungan yang dibutuhkan kepada individu dan mempromosikan pemahaman yang lebih baik tentang kesehatan mental di Indonesia.</string>
 
+
+    // Home
+    <string name="hello">Halo sobat CMAS 👋</string>
+    <string name="welcome">Selamat datang di CMAS! Kami ada untuk kesehatan mental Anda. Kami siap membantu kamu dalam perjalanan melawan depresi.</string>
 </resources>
