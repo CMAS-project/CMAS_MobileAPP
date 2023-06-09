@@ -42,6 +42,9 @@ android {
 
 dependencies {
 
+    // Circle ImageView
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+
     // KTX
     implementation ("androidx.activity:activity-ktx:1.7.1")
     implementation ("androidx.fragment:fragment-ktx:1.5.7")
@@ -71,7 +74,6 @@ dependencies {
 
     // Location
     implementation("com.google.android.gms:play-services-location:21.0.1")
-    
 
     // dots indicator
     implementation("com.tbuonomo:dotsindicator:5.0")

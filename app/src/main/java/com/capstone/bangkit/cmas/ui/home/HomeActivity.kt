@@ -3,13 +3,9 @@ package com.capstone.bangkit.cmas.ui.home
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.capstone.bangkit.cmas.R
 import com.capstone.bangkit.cmas.databinding.ActivityHomeBinding
-import com.capstone.bangkit.cmas.ui.ProfileActivity
 import com.capstone.bangkit.cmas.ui.chatbot.ChatbotFragment
 import com.capstone.bangkit.cmas.ui.location.MapsFragment
 import com.capstone.bangkit.cmas.ui.reflection.ReflectionFragment

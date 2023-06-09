@@ -2,6 +2,11 @@
     <string name="app_name">CMAS</string>
     <string name="yuk_join">Yuk Join!</string>
 
+    // Dummy
+    <string name="dummyName">Ardena Afif Pratama</string>
+    <string name="dummyGender">Laki - laki</string>
+
+
     <string name="chat">Apakah kamu merasa stres?</string>
     <string name="find">Cari Konsultan?</string>
     <string name="scan">Pindai Wajahmu</string>
@@ -20,14 +25,13 @@
     <string name="profile">Profil</string>
 
     <string name="please_activate_location_message">Yuk aktifkan fitur lokasi di hp mu</string>
+
     <string name="login">Masuk</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="logo">logo</string>
     <string name="havent_account">Kamu belum daftar?</string>
     <string name="sign_up">Yuk daftar</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="already_have_account">Kamu udah punya akun?</string>
     <string name="yuk_masuk">Yuk Masuk</string>
 
@@ -35,5 +39,13 @@
         <item>Laki-laki</item>
         <item>Perempuan</item>
     </string-array>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="edit_profile">Edit Profil</string>
+    <string name="change_password">Ubah Password</string>
+    <string name="logout">Keluar</string>
+    <string name="about_us">Tentang Kami</string>
+    <string name="contact_us">Hubungi Kami</string>
+
+    <string name="about_us_desc">Aplikasi CMAS (Cari, Menerima, Antisipasi, Sembuh) merupakan sebuah inisiatif yang bertujuan untuk mengatasi masalah kesehatan mental di Indonesia. Menyadari tingginya angka prevalensi masalah kesehatan mental dan depresi di negara ini, kami ingin memberikan solusi dengan menyediakan aksesibilitas yang lebih luas bagi masyarakat. CMAS hadir dengan visi untuk menghilangkan stigma negatif terkait dengan masalah kesehatan mental, karena kami percaya bahwa tidak ada yang seharusnya malu dalam menghadapinya. Melalui aplikasi ini, kami menyediakan informasi dan sumber daya yang berguna tentang cara menghadapi dan mengelola masalah kesehatan mental, terutama dalam hal kecemasan dan depresi. Dengan demikian, CMAS bertujuan untuk memberikan dukungan yang dibutuhkan kepada individu dan mempromosikan pemahaman yang lebih baik tentang kesehatan mental di Indonesia.</string>
 
 </resources>

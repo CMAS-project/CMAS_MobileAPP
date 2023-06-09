@@ -1,17 +1,17 @@
-package com.capstone.bangkit.cmas.ui.scan
+package com.capstone.bangkit.cmas.ui.about
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.capstone.bangkit.cmas.R
-import com.capstone.bangkit.cmas.databinding.ActivityScanBinding
+import com.capstone.bangkit.cmas.databinding.ActivityAboutBinding
 
-class ScanActivity : AppCompatActivity() {
+class AboutActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityScanBinding
+    private lateinit var binding: ActivityAboutBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityScanBinding.inflate(layoutInflater)
+        binding = ActivityAboutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         customToolbar()
@@ -23,7 +23,7 @@ class ScanActivity : AppCompatActivity() {
             toolbar.navBack.setOnClickListener() {
                 onBackPressed()
             }
-            toolbar.tvToolbarName.setText(R.string.scan)
+            toolbar.tvToolbarName.setText(R.string.about_us)
         }
     }
 
@@ -31,5 +31,4 @@ class ScanActivity : AppCompatActivity() {
         onBackPressed()
         return true
     }
-
 }

@@ -1,16 +1,16 @@
-package com.capstone.bangkit.cmas.ui
+package com.capstone.bangkit.cmas.ui.contact
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.capstone.bangkit.cmas.R
-import com.capstone.bangkit.cmas.databinding.ActivityProfileBinding
+import com.capstone.bangkit.cmas.databinding.ActivityContactBinding
 
-class ProfileActivity : AppCompatActivity() {
+class ContactActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityProfileBinding
+    private lateinit var binding: ActivityContactBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityProfileBinding.inflate(layoutInflater)
+        binding = ActivityContactBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         customToolbar()
@@ -22,7 +22,7 @@ class ProfileActivity : AppCompatActivity() {
             toolbar.navBack.setOnClickListener() {
                 onBackPressed()
             }
-            toolbar.tvToolbarName.setText(R.string.profile)
+            toolbar.tvToolbarName.setText(R.string.contact_us)
         }
     }
 
