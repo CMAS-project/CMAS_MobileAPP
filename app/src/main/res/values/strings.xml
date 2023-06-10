@@ -51,4 +51,6 @@
     // Home
     <string name="hello">Halo sobat CMAS 👋</string>
     <string name="welcome">Selamat datang di CMAS! Kami ada untuk kesehatan mental Anda. Kami siap membantu kamu dalam perjalanan melawan depresi.</string>
+    <string name="scan_description">Hai Sobat CMAS! Silahkan Foto Wajah untuk cek tingkat Depresi anda</string>
+    <string name="cek_yuk">Cek Yuk</string>
 </resources>

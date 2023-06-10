@@ -42,11 +42,16 @@ android {
 
 dependencies {
 
+    // Camera
+    implementation ("androidx.camera:camera-camera2:1.2.3")
+    implementation ("androidx.camera:camera-lifecycle:1.2.3")
+    implementation ("androidx.camera:camera-view:1.2.3")
+
     // Circle ImageView
     implementation("de.hdodenhof:circleimageview:3.1.0")
 
     // KTX
-    implementation ("androidx.activity:activity-ktx:1.7.1")
+    implementation ("androidx.activity:activity-ktx:1.7.2")
     implementation ("androidx.fragment:fragment-ktx:1.5.7")
     implementation ("androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1")
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")

@@ -66,11 +66,10 @@ class HomeFragment : Fragment() {
             }
 
             toolbar.notification.setOnClickListener {
-                Toast.makeText(requireContext(), "Kamu dapat notifikasi", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Fitur ini belum tersedia", Toast.LENGTH_SHORT).show()
             }
         }
     }
-
     private fun replaceFragment(fragment: Fragment) {
         val fragmentManager = parentFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
