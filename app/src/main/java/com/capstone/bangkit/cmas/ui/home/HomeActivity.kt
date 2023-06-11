@@ -8,7 +8,7 @@ import com.capstone.bangkit.cmas.R
 import com.capstone.bangkit.cmas.databinding.ActivityHomeBinding
 import com.capstone.bangkit.cmas.ui.chatbot.ChatbotFragment
 import com.capstone.bangkit.cmas.ui.location.MapsFragment
-import com.capstone.bangkit.cmas.ui.reflection.ReflectionFragment
+import com.capstone.bangkit.cmas.ui.article.ArticleFragment
 import com.capstone.bangkit.cmas.ui.scan.ScanActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -28,7 +28,7 @@ class HomeActivity : AppCompatActivity() {
                 R.id.home -> replaceFragment(HomeFragment())
                 R.id.location -> replaceFragment(MapsFragment())
                 R.id.chatbot -> replaceFragment(ChatbotFragment())
-                R.id.reflection -> replaceFragment(ReflectionFragment())
+                R.id.reflection -> replaceFragment(ArticleFragment())
             }
             true
         }

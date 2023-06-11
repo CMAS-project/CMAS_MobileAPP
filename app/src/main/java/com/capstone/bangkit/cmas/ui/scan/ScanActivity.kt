@@ -45,6 +45,14 @@ class ScanActivity : AppCompatActivity() {
             toolbar.tvToolbarName.setText(R.string.scan)
 
             btnCamera.setOnClickListener { startCamera() }
+            btnTrash.setOnClickListener { removeImage() }
+        }
+    }
+
+    private fun removeImage() {
+        getFile = null
+        binding.apply {
+            imgPreview.setImageResource(R.drawable.ic_preview)
         }
     }
 

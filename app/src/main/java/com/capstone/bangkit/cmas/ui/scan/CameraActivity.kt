@@ -32,6 +32,13 @@ class CameraActivity : AppCompatActivity() {
 
         binding.captureImage.setOnClickListener { takePhoto() }
         startCamera()
+        close()
+    }
+
+    private fun close() {
+        binding.close.setOnClickListener {
+            onBackPressed()
+        }
     }
 
     public override fun onResume() {

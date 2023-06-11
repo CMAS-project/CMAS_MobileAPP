@@ -53,4 +53,57 @@
     <string name="welcome">Selamat datang di CMAS! Kami ada untuk kesehatan mental Anda. Kami siap membantu kamu dalam perjalanan melawan depresi.</string>
     <string name="scan_description">Hai Sobat CMAS! Silahkan Foto Wajah untuk cek tingkat Depresi anda</string>
     <string name="cek_yuk">Cek Yuk</string>
+    <string name="typing">Sedang menulis...</string>
+    <string name="online">Online</string>
+    <string name="bot_name">EmoWell</string>
+
+    // Data Artikel
+    <integer-array name="id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+
+    <string-array name="data_judul">
+        <item>Apa itu kecemasan?</item>
+        <item>Apa itu depresi?</item>
+        <item>Apa itu stress?</item>
+        <item>Apa itu serangan panik?</item>
+        <item>Apa itu cyberbullying?</item>
+
+    </string-array>
+
+    <string-array name="data_pengertian">
+        <item>Cemas adalah perasaan yang timbul ketika kita khawatir atau takut akan sesuatu. Rasa takut dan panik adalah hal yang manusiawi. Setelah beberapa waktu, kita biasanya merasa lebih tenang dan nyaman.\n\n Rasa khawatir dan takut, dalam batasan tertentu, dapat membantu menjaga kita, bahkan melindungi dari marabahaya. Akan tetapi, ada kalanya, rasa cemas membuat keadaan terasa lebih buruk dari yang sebenarnya dan membuat kita kewalahan. Kekhawatiran yang berlangsung berkepanjangan dapat menyebabkan kecemasan yang berjangka panjang.</item>
+
+        <item>Depresi adalah salah satu bentuk kondisi kesehatan mental yang dialami banyak orang dan sering kali muncul berbarengan dengan kecemasan. Depresi bisa ringan dan sementara, atau berat dan berkepanjangan. Ada orang-orang yang mengalami depresi hanya sekali dalam hidupnya; ada pula yang mengalaminya berkali-kali.\n Depresi bisa berujung pada tindak bunuh diri, tetapi hal ini bisa dicegah dengan dukungan yang tepat. Penting untuk mengetahui bahwa ada banyak hal yang bisa dilakukan untuk membantu anak-anak muda yang memiliki dorongan untuk melakukan tindakan ini.</item>
+
+        <item>Stres adalah perasaan yang umumnya dapat kita rasakan saat berada di bawah tekanan, merasa kewalahan, atau kesulitan menghadapi suatu situasi. Stres dalam batas tertentu bisa berdampak positif dan memotivasi kita untuk mencapai suatu tujuan, seperti mengerjakan tes atau berpidato. Namun, stres yang berlebihan, apalagi jika terasa sulit dikendalikan, dapat berdampak negatif terhadap suasana hati, kesehatan fisik dan mental, dan hubungan kita dengan orang lain.</item>
+
+        <item>Serangan panik adalah rasa takut dan cemas yang bisa tiba-tiba membuat kita kewalahan dan biasanya diiringi dengan gejala fisik lainnya yang akut, seperti napas tersengal-sengal, dan jantung berdegup kencang. \nBagi banyak anak yang mengalami serangan ini, mereka juga merasakan teror, seolah suatu peristiwa buruk akan terjadi. Perasaan ini dapat muncul meskipun mereka tidak benar-benar berada dalam bahaya.</item>
+
+        <item>Cyberbullying (perundungan dunia maya) ialah bullying/perundungan dengan menggunakan teknologi digital. Hal ini dapat terjadi di media sosial, platform chatting, platform bermain game, dan ponsel. Adapun menurut Think Before Text, cyberbullying adalah perilaku agresif dan bertujuan yang dilakukan suatu kelompok atau individu, menggunakan media elektronik, secara berulang-ulang dari waktu ke waktu, terhadap seseorang yang dianggap tidak mudah melakukan perlawanan atas tindakan tersebut. Jadi, terdapat perbedaan kekuatan antara pelaku dan korban. Perbedaan kekuatan dalam hal ini merujuk pada sebuah persepsi kapasitas fisik dan mental.</item>
+    </string-array>
+
+    <string-array name="data_penyebab">
+        <item>Sulit untuk mengenali satu penyebab utama dari kecemasan. Ketika menghadapi situasi yang menimbulkan stres, akan ada semacam alarm peringatan yang menyala di otak kita dan menandakan ada sesuatu yang tidak beres dan perlu kita hadapi. Supaya situasi sulit ini lekas berakhir, otak kita akan membuat kita lebih waspada, fokus hanya pada situasi itu, bahkan memompa lebih banyak darah ke kaki agar kita dapat melarikan diri.</item>
+
+        <item>Depresi bisa terjadi sebagai reaksi terhadap suatu peristiwa, misalnya penganiayaan, kekerasan di sekolah, kematian orang terdekat, atau masalah keluarga seperti kekerasan di dalam rumah tangga ataupun perpisahan orang tua. Seseorang bisa mengalami depresi setelah merasa stres untuk waktu yang lama. Depresi juga bisa diturunkan di dalam keluarga. Selain itu, ada kalanya kita tidak tahu mengapa depresi timbul.</item>
+
+        <item>Pengalaman menghadapi stres pada anak tidak selalu sama dengan orang dewasa. . Di kalangan orang dewasa, stres terkait pekerjaan sangat umum terjadi. Namun, bagi anak, stres terjadi ketika mereka tidak bisa menghadapi situasi yang mengandung ancaman, situasi sulit, atau situasi yang menyakitkan, antara lain: \nPikiran atau perasaan negatif tentang diri sendiri\nPerubahan fisik, misalnya permulaan pubertas\nBeban belajar, misalnya ulangan atau bertambahnya pekerjaan rumah seiring waktu\nMasalah dengan teman di sekolah atau lingkungan sosial\nPerubahan besar, seperti pindah rumah, pindah sekolah, atau perpisahan orang tua\nPenyakit kronis, masalah keuangan di keluarga, atau kematian orang terdekat\nSituasi rumah atau lingkungan sekitar yang tidak aman\n</item>
+
+        <item>Penyebab serangan panik tidak selalu jelas, baik pada anak-anak maupun orang dewasa. Yang diketahui, kepanikan dapat dipicu oleh rasa cemas tentang sesuatu atau saat sedang mengalami situasi sulit dan stres, antara lain: \nCemas karena ada pengalaman tidak menyenangkan di rumah atau sekolah\nStres karena ujian sekolah, masalah pada hubungan pertemanan atau dengan orang terdekat lainya\nKematian orang terdekat\nPengalaman mengerikan, seperti penganiayaan atau penelantaran\nPengalaman yang melibatkan kekerasan\n</item>
+
+        <item>Apa itu cyberbullying?</item>
+    </string-array>
+
+    <string-array name="data_gejala">
+        <item>Apa itu kecemasan?</item>
+        <item>Apa itu kecemasan?</item>
+        <item>Apa itu serangan panik?</item>
+        <item>Apa itu cyberbullying?</item>
+        <item>Airbus A319neo</item>
+    </string-array>
 </resources>
