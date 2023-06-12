@@ -6,7 +6,7 @@
     <string name="dummyName">Ardena Afif Pratama</string>
     <string name="dummyGender">Laki - laki</string>
 
-
+    // Onboarding
     <string name="chat">Apakah kamu merasa stres?</string>
     <string name="find">Cari Konsultan?</string>
     <string name="scan">Pindai Wajahmu</string>
@@ -23,8 +23,10 @@
     <string name="notification">Notifikasi</string>
     <string name="profile">Profil</string>
 
+    // Location
     <string name="please_activate_location_message">Yuk aktifkan fitur lokasi di hp mu</string>
 
+    // Auth
     <string name="login">Masuk</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
@@ -33,6 +35,11 @@
     <string name="sign_up">Yuk daftar</string>
     <string name="already_have_account">Kamu udah punya akun?</string>
     <string name="yuk_masuk">Yuk Masuk</string>
+    <string name="email_error_message">Email tidak valid</string>
+    <string name="password_minimum_character">Password minimal 8 karakter</string>
+    <string name="password_confirm_message">Konfirmasi password harus sama</string>
+    <string name="password_confirm">Konfirmasi Password</string>
+    <string name="auth_error_message">Cek email dan password dengan benar</string>
 
     <string-array name="gender_array">
         <item>Laki-laki</item>

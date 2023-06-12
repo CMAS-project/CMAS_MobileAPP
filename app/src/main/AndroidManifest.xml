@@ -47,7 +47,9 @@
 
         <activity
             android:name=".ui.home.HomeActivity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".ui.main.MainActivity"
             android:exported="true">

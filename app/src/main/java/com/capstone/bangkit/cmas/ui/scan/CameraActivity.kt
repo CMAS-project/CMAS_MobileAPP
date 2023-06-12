@@ -13,10 +13,8 @@ import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
-import com.capstone.bangkit.cmas.R
-import com.capstone.bangkit.cmas.createFile
+import com.capstone.bangkit.cmas.utils.createFile
 import com.capstone.bangkit.cmas.databinding.ActivityCameraBinding
-import com.capstone.bangkit.cmas.databinding.ActivityContactBinding
 
 class CameraActivity : AppCompatActivity() {
 

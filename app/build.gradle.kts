@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("kotlin-parcelize")
     id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -43,6 +44,12 @@ android {
 
 dependencies {
 
+    // Firebase
+    implementation("com.google.firebase:firebase-bom:32.1.0")
+    implementation("com.google.firebase:firebase-analytics-ktx:21.3.0")
+    implementation("com.google.firebase:firebase-auth-ktx:22.0.0")
+
+
     // Camera
     implementation ("androidx.camera:camera-camera2:1.2.3")
     implementation ("androidx.camera:camera-lifecycle:1.2.3")
@@ -67,6 +74,7 @@ dependencies {
     // Glide
     implementation ("com.github.bumptech.glide:glide:4.15.0")
     implementation("androidx.datastore:datastore-core:1.0.0")
+    implementation("com.google.firebase:firebase-auth:22.0.0")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.13.0")
 
     // DataStore

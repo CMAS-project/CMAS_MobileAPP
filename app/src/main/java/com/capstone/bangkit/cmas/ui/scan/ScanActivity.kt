@@ -12,7 +12,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.capstone.bangkit.cmas.R
 import com.capstone.bangkit.cmas.databinding.ActivityScanBinding
-import com.capstone.bangkit.cmas.rotateBitmap
+import com.capstone.bangkit.cmas.utils.rotateBitmap
 import java.io.File
 
 class ScanActivity : AppCompatActivity() {

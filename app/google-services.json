@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "643134458977",
+    "project_id": "cmas-f28ed",
+    "storage_bucket": "cmas-f28ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643134458977:android:dfd97fd8ed1dc5c2b2ee20",
+        "android_client_info": {
+          "package_name": "com.capstone.bangkit.cmas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643134458977-tdq50f0bi49n7193ns7higrsgj4it6j2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVUw64J1HCOjNjfqSFsTJqSFtsS0OiYlM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643134458977-tdq50f0bi49n7193ns7higrsgj4it6j2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,8 +1,9 @@
-package com.capstone.bangkit.cmas
+package com.capstone.bangkit.cmas.utils
 
 import android.app.Application
 import android.graphics.Bitmap
 import android.graphics.Matrix
+import com.capstone.bangkit.cmas.R
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Locale

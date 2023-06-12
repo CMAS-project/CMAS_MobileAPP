@@ -7,14 +7,20 @@ import com.capstone.bangkit.cmas.R
 import com.capstone.bangkit.cmas.databinding.ActivityProfileBinding
 import com.capstone.bangkit.cmas.ui.about.AboutActivity
 import com.capstone.bangkit.cmas.ui.contact.ContactActivity
+import com.capstone.bangkit.cmas.ui.main.MainActivity
+import com.google.firebase.auth.FirebaseAuth
 
 class ProfileActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityProfileBinding
+
+    private lateinit var firebaseAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        firebaseAuth = FirebaseAuth.getInstance()
 
         customToolbar()
         cmasAction()
@@ -22,6 +28,25 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun cmasAction() {
         binding.apply {
+
+            // Firebase User
+           val name = binding.name
+
+            val firebaseUser = firebaseAuth.currentUser
+            if (firebaseUser != null) {
+                name.text = firebaseUser.displayName
+            } else {
+                startActivity(Intent(this@ProfileActivity, MainActivity::class.java))
+                finish()
+            }
+
+            logout.setOnClickListener {
+                Intent(this@ProfileActivity, MainActivity::class.java).also {
+                    startActivity(it)
+                    finish()
+                }
+            }
+
             aboutUs.setOnClickListener {
                 Intent(this@ProfileActivity, AboutActivity::class.java).also {
                     startActivity(it)

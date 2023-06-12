@@ -65,22 +65,22 @@
                         android:inputType="textPersonName" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/txtInputLayoutGender"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="21dp"
-                    app:endIconMode="dropdown_menu"
-                    app:startIconDrawable="@drawable/ic_gender">
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/txtInputLayoutGender"-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginTop="21dp"-->
+<!--                    app:endIconMode="dropdown_menu"-->
+<!--                    app:startIconDrawable="@drawable/ic_gender">-->
 
-                    <AutoCompleteTextView
-                        android:id="@+id/gender"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Jenis Kelamin"
-                        android:inputType="textPersonName" />
-                </com.google.android.material.textfield.TextInputLayout>
+<!--                    <AutoCompleteTextView-->
+<!--                        android:id="@+id/gender"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="Jenis Kelamin"-->
+<!--                        android:inputType="textPersonName" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
 
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -118,6 +118,24 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputLayoutPasswordConfirm"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="21dp"
+                    app:endIconMode="password_toggle"
+                    app:startIconDrawable="@drawable/ic_lock">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_password_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password_confirm"
+                        android:inputType="textPassword"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
 
                 <Button
                     android:id="@+id/btn_daftar"
@@ -126,6 +144,7 @@
                     android:layout_marginTop="21dp"
                     android:textStyle="bold"
                     android:background="@drawable/btn"
+                    android:onClick="onDaftarClick"
                     android:text="@string/sign_up" />
 
                 <ImageView
