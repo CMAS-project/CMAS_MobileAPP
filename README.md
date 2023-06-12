@@ -10,11 +10,11 @@ CMAS MOBILE DEVELOPMENT
 
 ### This is our Members
 
-* (ML) M038DSX0099 - Geraldo Enrico Semen - 
-* (ML) M340DSY3302 - Gemala Gita Prameswari - 
-* (ML) M168DSX3690 -  Rendy Ilhamsyah - 
-* (CC) C151DKX3986 - Alif Wahyu Widi Adrian - 
-* (CC) C172DKY4104 - Septiyani Nadia Astuti - 
+* (ML) M038DSX0099 - Geraldo Enrico Semen - Institut Teknologi Sepuluh Nopember
+* (ML) M340DSY3302 - Gemala Gita Prameswari - Universitas Sebelas Maret
+* (ML) M168DSX3690 -  Rendy Ilhamsyah - Universitas Esa Unggul
+* (CC) C151DKX3986 - Alif Wahyu Widi Adrian - Universitas Brawijaya
+* (CC) C172DKY4104 - Septiyani Nadia Astuti - Universitas Gunadarma
 * (MD) A161DKX3846 - Ardena Afif Pratama - Universitas Darussalam Gontor
 
 # CMAS Mobile Develoment Project
