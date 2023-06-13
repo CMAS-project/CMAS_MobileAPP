@@ -37,33 +37,33 @@ class HomeFragment : Fragment() {
         rvArticle = binding.rvArticle
         rvArticle.setHasFixedSize(true)
 
-        list.addAll(getListArticle())
-        showRecyclerView()
+//        list.addAll(getListArticle())
+//        showRecyclerView()
 
         return rootView
     }
 
-    private fun showRecyclerView() {
-        rvArticle.layoutManager = LinearLayoutManager(requireContext())
-        val listArticle = ListItemArticleAdapter(list)
-        rvArticle.adapter = listArticle
-    }
+//    private fun showRecyclerView() {
+//        rvArticle.layoutManager = LinearLayoutManager(requireContext())
+//        val listArticle = ListItemArticleAdapter(viewModel.listArticle.value ?: emptyList())
+//        rvArticle.adapter = listArticle
+//    }
 
-    private fun getListArticle(): Collection<Article> {
-        val id = resources.obtainTypedArray(R.array.id)
-        val dataName = resources.getStringArray(R.array.data_judul)
-        val dataDescription = resources.getStringArray(R.array.data_pengertian)
-
-        val listArticle = ArrayList<Article>()
-        val limit = minOf(dataName.size, 3)
-
-        for (i in 0 until limit) {
-            val article = Article(id.getResourceId(i, 0), dataName[i], dataDescription[i])
-            listArticle.add(article)
-        }
-
-        return listArticle
-    }
+//    private fun getListArticle(): Collection<Article> {
+//        val id = resources.obtainTypedArray(R.array.id)
+//        val dataName = resources.getStringArray(R.array.data_judul)
+//        val dataDescription = resources.getStringArray(R.array.data_pengertian)
+//
+//        val listArticle = ArrayList<Article>()
+//        val limit = minOf(dataName.size, 3)
+//
+//        for (i in 0 until limit) {
+//            val article = Article(id.getResourceId(i, 0), dataName[i], dataDescription[i])
+//            listArticle.add(article)
+//        }
+//
+//        return listArticle
+//    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

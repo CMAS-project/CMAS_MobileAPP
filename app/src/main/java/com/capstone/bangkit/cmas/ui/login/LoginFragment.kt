@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
 import com.capstone.bangkit.cmas.R
 import com.capstone.bangkit.cmas.databinding.FragmentLoginBinding
@@ -24,17 +25,9 @@ class LoginFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var firebaseAuth: FirebaseAuth
+    private val viewModel: LoginViewModel by viewModels()
 
     lateinit var progressDialog: ProgressDialog
-
-//    var firebaseAuth = FirebaseAuth.getInstance()
-
-//    override fun onStart() {
-//        super.onStart()
-//        if (firebaseAuth.currentUser != null) {
-//            startActivity(Intent(requireContext(), HomeActivity::class.java))
-//        }
-//    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -50,10 +43,43 @@ class LoginFragment : Fragment() {
         firebaseAuth = FirebaseAuth.getInstance()
 
         progressDialog = ProgressDialog(requireContext())
-        progressDialog.setTitle("Loading...")
-        progressDialog.setMessage("Tunggu Sebentar")
+        progressDialog.setTitle("Tunggu sebentar...")
+        progressDialog.setMessage("Ini mungkin membutuhkan waktu beberapa saat.")
 //        setAction()
-        loginAction()
+//        loginAction()
+        action()
+        observeViewModel()
+    }
+
+    private fun action() {
+        binding.btnLogin.setOnClickListener {
+            val email = binding.edtEmail.text.toString()
+            val password = binding.edtPassword.text.toString()
+
+            if (email.isNotEmpty() && password.isNotEmpty()) {
+                progressDialog.show()
+                viewModel.login(email, password)
+            } else {
+                progressDialog.dismiss()
+                Toast.makeText(requireContext(), "Silahkan isi email dan password dahulu", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        binding.signUp.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_registrationFragment)
+        )
+        edtPassword()
+    }
+
+    private fun observeViewModel() {
+        viewModel.isLoggedIn.observe(viewLifecycleOwner) { isLoggedIn ->
+            if (isLoggedIn) {
+                progressDialog.dismiss()
+                val intent = Intent(requireContext(), HomeActivity::class.java)
+                startActivity(intent)
+                requireActivity().finish()
+            }
+        }
     }
 
     private fun loginAction() {

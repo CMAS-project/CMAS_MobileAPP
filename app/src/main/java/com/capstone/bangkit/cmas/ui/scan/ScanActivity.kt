@@ -8,8 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.viewModels
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.Observer
 import com.capstone.bangkit.cmas.R
 import com.capstone.bangkit.cmas.databinding.ActivityScanBinding
 import com.capstone.bangkit.cmas.utils.rotateBitmap
@@ -17,13 +19,31 @@ import java.io.File
 
 class ScanActivity : AppCompatActivity() {
 
+    private var isBackCamera: Boolean = true
+
     private lateinit var binding: ActivityScanBinding
     private var getFile: File? = null
+
+    private val viewModel: ScanViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityScanBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Observe changes in scanned image
+        viewModel.scannedImage.observe(this, Observer { file ->
+            getFile = file
+            if (getFile != null) {
+                val result = rotateBitmap(
+                    BitmapFactory.decodeFile(getFile?.path),
+                    isBackCamera
+                )
+                binding.imgPreview.setImageBitmap(result)
+            } else {
+                binding.imgPreview.setImageResource(R.drawable.ic_preview)
+            }
+        })
 
         if (!allPermissionsGranted()) {
             ActivityCompat.requestPermissions(
@@ -51,9 +71,10 @@ class ScanActivity : AppCompatActivity() {
 
     private fun removeImage() {
         getFile = null
-        binding.apply {
-            imgPreview.setImageResource(R.drawable.ic_preview)
-        }
+        viewModel.clearScannedImage()
+//        binding.apply {
+//            imgPreview.setImageResource(R.drawable.ic_preview)
+//        }
     }
 
     private fun startCamera() {
@@ -68,13 +89,15 @@ class ScanActivity : AppCompatActivity() {
             val myFile = it.data?.getSerializableExtra("picture") as File
             val isBackCamera = it.data?.getBooleanExtra("isBackCamera", true) as Boolean
 
-            getFile = myFile
-            val result = rotateBitmap(
-                BitmapFactory.decodeFile(getFile?.path),
-                isBackCamera
-            )
-
-            binding.imgPreview.setImageBitmap(result)
+            viewModel.setScannedImage(myFile)
+            this.isBackCamera = isBackCamera
+//            getFile = myFile
+//            val result = rotateBitmap(
+//                BitmapFactory.decodeFile(getFile?.path),
+//                isBackCamera
+//            )
+//
+//            binding.imgPreview.setImageBitmap(result)
         }
     }
 

@@ -20,8 +20,8 @@ class DetailArticleActivity : AppCompatActivity() {
             val judul = binding.tvJudul
             val desc = binding.tvDesc
 
-            judul.text = dataArticle.name
-            desc.text = dataArticle.desc
+            judul.text = dataArticle.title
+            desc.text = dataArticle.description
         }
 
         customToolbar()

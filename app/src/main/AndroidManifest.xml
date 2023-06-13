@@ -43,21 +43,22 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCA58v0DLxmCLLl6BTU75bCY5nWEU3SN78" />
+            android:value="AIzaSyAc1E9dJBuDjXXLFawZkMuPRYLvie6OR4M" />
 
         <activity
             android:name=".ui.home.HomeActivity"
             android:exported="true" >
-
-        </activity>
-        <activity
-            android:name=".ui.main.MainActivity"
-            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="true">
+
         </activity>
     </application>
 

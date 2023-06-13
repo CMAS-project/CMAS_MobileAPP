@@ -1,6 +1,7 @@
 package com.capstone.bangkit.cmas.ui.registration
 
 import android.annotation.SuppressLint
+import android.app.ProgressDialog
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
@@ -28,16 +29,10 @@ class RegistrationFragment : Fragment() {
     private var _binding: FragmentRegistrationBinding? = null
     private val binding get() = _binding!!
 
+    lateinit var progressDialog: ProgressDialog
+
     private lateinit var firebaseAuth: FirebaseAuth
 
-//    var firebaseAuth = FirebaseAuth.getInstance()
-
-//    override fun onStart() {
-//        super.onStart()
-//        if (firebaseAuth.currentUser != null) {
-//            startActivity(Intent(requireContext(), HomeActivity::class.java))
-//        }
-//    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -52,6 +47,10 @@ class RegistrationFragment : Fragment() {
         setAction()
 
         firebaseAuth = FirebaseAuth.getInstance()
+
+        progressDialog = ProgressDialog(requireContext())
+        progressDialog.setTitle("Tunggu sebentar...")
+        progressDialog.setMessage("Ini mungkin membutuhkan waktu beberapa saat. Harap tunggu.")
 
     }
 
@@ -72,8 +71,7 @@ class RegistrationFragment : Fragment() {
 
                 if (email.isNotEmpty() && password.isNotEmpty() && passwordConfirm.isNotEmpty()) {
                     if (password == passwordConfirm) {
-
-
+                        progressDialog.show()
                         firebaseAuth.createUserWithEmailAndPassword(email, password)
                             .addOnCompleteListener { task ->
                                 if (task.isSuccessful) {
@@ -101,6 +99,7 @@ class RegistrationFragment : Fragment() {
                                 }
                             }
                     } else {
+                        progressDialog.dismiss()
                         Toast.makeText(requireContext(), "Password harus sama", Toast.LENGTH_SHORT)
                             .show()
                     }
