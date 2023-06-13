@@ -57,6 +57,27 @@
     <string name="online">Online</string>
     <string name="bot_name">EmoWell</string>
 
+    // Emotion
+    <string name="happy">Wah, senang sekali melihatmu begitu ceria!</string>
+    <string name="happy_desc">Jaga mood positifmu ya. Senang adalah perasaan gembira dan puas dengan situasi menyenangkan.</string>
+
+    <string name="sad">Aduh sedih..</string>
+    <string name="sad_desc">Aduh, sedih ya. Jangan khawatir, setiap orang mengalami sedih. Ingat, kamu tidak sendirian.</string>
+
+    <string name="scared">Ih.. takut</string>
+    <string name="scared_desc">Jangan takut! Ketakutan adalah hal yang normal. Kamu lebih kuat daripada yang kamu kira.</string>
+
+    <string name="disgust">Hmm, kok risih</string>
+    <string name="disgust_desc">Risih ya? Setiap orang memiliki preferensi berbeda. Jujurlah pada dirimu sendiri dan temukan lingkungan yang nyaman.</string>
+
+
+    <string name="angry">Aaargh, marah!</string>
+    <string name="angry_desc">Marah adalah emosi normal. Kelola kemarahan dengan bijaksana dan cari solusi yang konstruktif.</string>
+
+    <string name="normal">Hari - harimu lancar</string>
+    <string name="normal_desc">Hari-harimu lancar dan biasa-biasa saja. Nikmati momen-momen sederhana dalam hidupmu.</string>
+    <string name="ok">OK</string>
+
     // Data Artikel
 
 </resources>

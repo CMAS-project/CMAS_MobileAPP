@@ -1,11 +1,15 @@
 package com.capstone.bangkit.cmas.ui.scan
 
 import android.Manifest
+import android.app.Dialog
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
@@ -66,7 +70,12 @@ class ScanActivity : AppCompatActivity() {
 
             btnCamera.setOnClickListener { startCamera() }
             btnTrash.setOnClickListener { removeImage() }
+            btnCek.setOnClickListener { ScanAction() }
         }
+    }
+
+    private fun ScanAction() {
+
     }
 
     private fun removeImage() {
@@ -126,6 +135,127 @@ class ScanActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
+    }
+
+    // Emotion Pop up
+    private fun happyEmo() {
+        val dialog = Dialog(this)
+        dialog.setContentView(R.layout.popup_layout)
+
+        val ivEmo = dialog.findViewById<ImageView>(R.id.iv_emo)
+        val tvJudul = dialog.findViewById<TextView>(R.id.tv_judul)
+        val tvDetail = dialog.findViewById<TextView>(R.id.tv_detail)
+        val buttonOk = dialog.findViewById<Button>(R.id.btn_ok)
+
+        ivEmo.setImageResource(R.drawable.happy) // Mengatur gambar sesuai dengan sumber daya yang ada
+        tvJudul.text = getString(R.string.happy) // Mengatur teks judul dari string resources
+        tvDetail.text = getString(R.string.happy_desc) // Mengatur teks detail dari string resources
+
+        buttonOk.setOnClickListener {
+            dialog.dismiss() // Menutup dialog saat tombol "OK" ditekan
+        }
+
+        dialog.show()
+    }
+
+    private fun scaredEmo() {
+        val dialog = Dialog(this)
+        dialog.setContentView(R.layout.popup_layout)
+
+        val ivEmo = dialog.findViewById<ImageView>(R.id.iv_emo)
+        val tvJudul = dialog.findViewById<TextView>(R.id.tv_judul)
+        val tvDetail = dialog.findViewById<TextView>(R.id.tv_detail)
+        val buttonOk = dialog.findViewById<Button>(R.id.btn_ok)
+
+        ivEmo.setImageResource(R.drawable.scared) // Mengatur gambar sesuai dengan sumber daya yang ada
+        tvJudul.text = getString(R.string.scared) // Mengatur teks judul dari string resources
+        tvDetail.text = getString(R.string.scared_desc) // Mengatur teks detail dari string resources
+
+        buttonOk.setOnClickListener {
+            dialog.dismiss() // Menutup dialog saat tombol "OK" ditekan
+        }
+
+        dialog.show()
+    }
+
+    private fun normalEmo() {
+        val dialog = Dialog(this)
+        dialog.setContentView(R.layout.popup_layout)
+
+        val ivEmo = dialog.findViewById<ImageView>(R.id.iv_emo)
+        val tvJudul = dialog.findViewById<TextView>(R.id.tv_judul)
+        val tvDetail = dialog.findViewById<TextView>(R.id.tv_detail)
+        val buttonOk = dialog.findViewById<Button>(R.id.btn_ok)
+
+        ivEmo.setImageResource(R.drawable.biasa_aja) // Mengatur gambar sesuai dengan sumber daya yang ada
+        tvJudul.text = getString(R.string.normal) // Mengatur teks judul dari string resources
+        tvDetail.text = getString(R.string.normal_desc) // Mengatur teks detail dari string resources
+
+        buttonOk.setOnClickListener {
+            dialog.dismiss() // Menutup dialog saat tombol "OK" ditekan
+        }
+
+        dialog.show()
+    }
+
+    private fun angryEmo() {
+        val dialog = Dialog(this)
+        dialog.setContentView(R.layout.popup_layout)
+
+        val ivEmo = dialog.findViewById<ImageView>(R.id.iv_emo)
+        val tvJudul = dialog.findViewById<TextView>(R.id.tv_judul)
+        val tvDetail = dialog.findViewById<TextView>(R.id.tv_detail)
+        val buttonOk = dialog.findViewById<Button>(R.id.btn_ok)
+
+        ivEmo.setImageResource(R.drawable.angry) // Mengatur gambar sesuai dengan sumber daya yang ada
+        tvJudul.text = getString(R.string.angry) // Mengatur teks judul dari string resources
+        tvDetail.text = getString(R.string.angry_desc) // Mengatur teks detail dari string resources
+
+        buttonOk.setOnClickListener {
+            dialog.dismiss() // Menutup dialog saat tombol "OK" ditekan
+        }
+
+        dialog.show()
+    }
+
+    private fun disgustEmo() {
+        val dialog = Dialog(this)
+        dialog.setContentView(R.layout.popup_layout)
+
+        val ivEmo = dialog.findViewById<ImageView>(R.id.iv_emo)
+        val tvJudul = dialog.findViewById<TextView>(R.id.tv_judul)
+        val tvDetail = dialog.findViewById<TextView>(R.id.tv_detail)
+        val buttonOk = dialog.findViewById<Button>(R.id.btn_ok)
+
+        ivEmo.setImageResource(R.drawable.disgusted) // Mengatur gambar sesuai dengan sumber daya yang ada
+        tvJudul.text = getString(R.string.disgust) // Mengatur teks judul dari string resources
+        tvDetail.text = getString(R.string.disgust_desc) // Mengatur teks detail dari string resources
+
+        buttonOk.setOnClickListener {
+            dialog.dismiss() // Menutup dialog saat tombol "OK" ditekan
+        }
+
+        dialog.show()
+    }
+
+    private fun sadEmo() {
+        val dialog = Dialog(this)
+        dialog.setContentView(R.layout.popup_layout)
+
+        val ivEmo = dialog.findViewById<ImageView>(R.id.iv_emo)
+        val tvJudul = dialog.findViewById<TextView>(R.id.tv_judul)
+        val tvDetail = dialog.findViewById<TextView>(R.id.tv_detail)
+        val buttonOk = dialog.findViewById<Button>(R.id.btn_ok)
+
+        ivEmo.setImageResource(R.drawable.sad) // Mengatur gambar sesuai dengan sumber daya yang ada
+        tvJudul.text = getString(R.string.sad) // Mengatur teks judul dari string resources
+        tvDetail.text = getString(R.string.sad_desc) // Mengatur teks detail dari string resources
+
+        buttonOk.setOnClickListener {
+            dialog.dismiss() // Menutup dialog saat tombol "OK" ditekan
+        }
+
+        dialog.show()
     }
 
     companion object {
