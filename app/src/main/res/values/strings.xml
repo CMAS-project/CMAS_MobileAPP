@@ -76,6 +76,9 @@
 
     <string name="normal">Hari - harimu lancar</string>
     <string name="normal_desc">Hari-harimu lancar dan biasa-biasa saja. Nikmati momen-momen sederhana dalam hidupmu.</string>
+
+    <string name="nothing_emo">Siapa kamu?</string>
+    <string name="nothing_emo_desc">Scan wajahmu dulu yuk, agar kami bisa mengenali kamu</string>
     <string name="ok">OK</string>
 
     // Data Artikel

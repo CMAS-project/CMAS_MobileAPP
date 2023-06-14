@@ -7,6 +7,7 @@ import android.content.pm.PackageManager
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -52,6 +53,10 @@ class ScanActivity : AppCompatActivity() {
             }
         })
 
+        viewModel.isLoading.observe(this) {
+            showLoading(it)
+        }
+
         if (!allPermissionsGranted()) {
             ActivityCompat.requestPermissions(
                 this,
@@ -81,10 +86,12 @@ class ScanActivity : AppCompatActivity() {
         val apiService = ApiConfig.getApiService() // Inisialisasi objek apiService sesuai implementasi Anda
         val label = "BAHAGIA" // Ganti dengan label yang sesuai
         val value = 0.8 // Ganti dengan nilai (value) yang sesuai
+        showLoading(true)
 
         viewModel.scanFace(apiService, label, value).observe(this) { scanResponse ->
             if (scanResponse != null) {
                 showPopup(scanResponse.label)
+                showLoading(false)
             }
         }
     }
@@ -154,12 +161,10 @@ class ScanActivity : AppCompatActivity() {
         ContextCompat.checkSelfPermission(baseContext, it) == PackageManager.PERMISSION_GRANTED
     }
 
-
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
     }
-
 
 
     // Emotion Pop up
@@ -170,7 +175,8 @@ class ScanActivity : AppCompatActivity() {
             "SEDIH" -> R.drawable.sad
             "KETAKUTAN" -> R.drawable.scared
             "SENANG / BAHAGIA", "BAHAGIA" -> R.drawable.happy
-            else -> R.drawable.biasa_aja
+            "NORMAL / BIASA-BIASA SAJA" -> R.drawable.biasa_aja
+            else -> R.drawable.confused
         }
     }
 
@@ -181,7 +187,8 @@ class ScanActivity : AppCompatActivity() {
             "SEDIH" -> getString(R.string.sad)
             "KETAKUTAN" -> getString(R.string.scared)
             "SENANG / BAHAGIA", "BAHAGIA" -> getString(R.string.happy)
-            else -> getString(R.string.normal)
+            "NORMAL / BIASA-BIASA SAJA" -> getString(R.string.normal)
+            else -> getString(R.string.nothing_emo)
         }
     }
 
@@ -192,8 +199,13 @@ class ScanActivity : AppCompatActivity() {
             "SEDIH" -> getString(R.string.sad_desc)
             "KETAKUTAN" -> getString(R.string.scared_desc)
             "SENANG / BAHAGIA", "BAHAGIA" -> getString(R.string.happy_desc)
-            else -> getString(R.string.normal_desc)
+            "NORMAL / BIASA-BIASA SAJA" -> getString(R.string.normal_desc)
+            else -> getString(R.string.nothing_emo_desc)
         }
+    }
+
+    private fun showLoading(loading: Boolean) {
+        binding.progressBar.visibility = if (loading) View.VISIBLE else View.GONE
     }
 
     companion object {

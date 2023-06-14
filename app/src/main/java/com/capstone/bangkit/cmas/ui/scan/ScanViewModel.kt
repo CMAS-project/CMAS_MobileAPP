@@ -26,6 +26,9 @@ class ScanViewModel: ViewModel() {
         _scannedImage.value = file
     }
 
+    private val _isLoading = MutableLiveData<Boolean>()
+    val isLoading: LiveData<Boolean> = _isLoading
+
     private val _isBackCamera = MutableLiveData<Boolean>()
     val isBackCamera: LiveData<Boolean> = _isBackCamera
 
