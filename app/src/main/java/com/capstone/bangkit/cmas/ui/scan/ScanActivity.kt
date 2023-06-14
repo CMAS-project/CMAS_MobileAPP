@@ -92,6 +92,9 @@ class ScanActivity : AppCompatActivity() {
             if (scanResponse != null) {
                 showPopup(scanResponse.label)
                 showLoading(false)
+            } else {
+                showLoading(false)
+                Toast.makeText(this, "Pindai wajahmu dahulu!", Toast.LENGTH_SHORT).show()
             }
         }
     }
