@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.chatbot.ChatbotActivity">
 
 
@@ -48,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
+            android:background="@color/white"
             android:orientation="horizontal"
             android:padding="10dp">
 
@@ -60,7 +62,9 @@
                 android:background="@color/transparant"
                 android:maxLines="3"
                 android:scrollbars="vertical"
+                android:textColor="@color/black"
                 android:inputType="textMultiLine"
+                android:textColorHint="@color/grey"
                 android:hint="@string/ketik_pesan" />
 
             <ImageView

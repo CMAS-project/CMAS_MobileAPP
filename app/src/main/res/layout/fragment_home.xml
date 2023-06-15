@@ -97,13 +97,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:background="@color/white"
                     android:orientation="vertical"
                     android:padding="10dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
+                        android:layout_marginBottom="5dp"
                         android:src="@drawable/ic_location"
                         app:tint="@color/blue_500" />
 
@@ -112,6 +113,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
                         android:text="@string/location"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -129,6 +131,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical"
+                    android:background="@color/white"
                     android:padding="10dp">
 
                     <ImageView
@@ -144,6 +147,7 @@
                         android:gravity="center"
                         android:fontFamily="@font/poppins_regular"
                         android:text="@string/chatbot"
+                        android:textColor="@color/black"
                         android:textSize="12sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -161,6 +165,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical"
+                    android:background="@color/white"
                     android:padding="10dp">
 
                     <ImageView
@@ -175,6 +180,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="@string/article"
+                        android:textColor="@color/black"
                         android:fontFamily="@font/poppins_regular"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -193,7 +199,8 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:padding="10dp">
+                    android:background="@color/white"
+                    android:padding="9dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -206,6 +213,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="@string/scan"
+                        android:textColor="@color/black"
                         android:fontFamily="@font/poppins_regular"
                         android:textSize="11sp" />
                 </LinearLayout>

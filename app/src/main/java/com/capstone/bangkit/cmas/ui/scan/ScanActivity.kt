@@ -117,8 +117,13 @@ class ScanActivity : AppCompatActivity() {
     }
 
     private fun removeImage() {
-        getFile = null
-        viewModel.clearScannedImage()
+        if (getFile == null) {
+            Toast.makeText(this, "Tidak ada gambar", Toast.LENGTH_SHORT).show()
+        } else {
+            getFile = null
+            viewModel.clearScannedImage()
+        }
+
     }
 
     private fun startCamera() {

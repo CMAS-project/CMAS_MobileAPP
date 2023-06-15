@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.profile.ProfileActivity">
 
     <include
@@ -40,6 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:background="@color/white"
                 android:orientation="vertical"
                 android:padding="18dp">
 
@@ -52,6 +54,7 @@
                         android:id="@+id/name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@color/white"
                         android:gravity="center"
                         android:padding="10dp"
                         android:fontFamily="@font/poppins_bold"
@@ -79,6 +82,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:gravity="center"
+                            android:background="@color/white"
                             android:fontFamily="@font/poppins_regular"
                             android:padding="10dp"
                             android:text="Pilih jenis kelamin"
@@ -115,6 +119,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
+                        android:background="@color/white"
                         android:padding="8dp">
 
                         <TextView
@@ -144,6 +149,7 @@
                                 android:layout_weight="1"
                                 android:fontFamily="@font/poppins_regular"
                                 android:padding="11dp"
+                                android:textColor="@color/black"
                                 android:text="@string/change_password"
                                 android:textSize="15sp" />
 
@@ -168,6 +174,7 @@
                                 android:layout_weight="1"
                                 android:padding="11dp"
                                 android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/black"
                                 android:text="@string/edit_profile"
                                 android:textSize="15sp" />
 
@@ -191,6 +198,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="11dp"
+                                android:textColor="@color/black"
                                 android:fontFamily="@font/poppins_regular"
                                 android:text="@string/logout"
                                 android:textSize="15sp" />
@@ -215,6 +223,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
+                        android:background="@color/white"
                         android:padding="8dp">
 
                         <TextView
@@ -243,6 +252,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:textColor="@color/black"
                                 android:text="@string/about_us"
                                 android:fontFamily="@font/poppins_regular"
                                 android:textSize="15sp" />
@@ -266,6 +276,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="@string/contact_us"
+                                android:textColor="@color/black"
                                 android:fontFamily="@font/poppins_regular"
                                 android:textSize="15sp" />
 
