@@ -44,13 +44,14 @@ Our team read the news about the raising concern regarding Indonesia’s mental 
 - [Google Maps Platform](https://developers.google.com/maps/documentation)
 
 > ## Features
-1. OnBoarding
-2. Login
-3. Signup
-4. Nearby Hospital Maps
-5. Emo Detection
-6. AI Chatbot
-7. Article
+1. AI Chatbot: this feature will be acting as an early-detection system, that the user will talk to, and our algorithm will determine if a person may have the tendency or not.
+2. Emotion Detection : this feature will scan your face emotion.
+3. Nearby-Hospital : We will provide user a location of nearby hospital that have psychiatrist/psychologist.
+4. Daily Newsletter: Our application will provide daily newsletter regarding mental health.
+5. (FUTURE) EEG Scan for determining age: This feature will determine your age based on your EEG scan. (Not an actual diagnosis, seek medical professional for sure)
+6. (FUTURE) EEG Scan for seizure detection: This feature will determine, if you have past events about seizure, or may develop seizure activities in the future. (Not an actual diagnosis, seek medical professional for sure)
+7. (FUTURE) Facial Recognition for detecting Scizophrenia: This feature is in consideration mode, this feature will scan your face whether you may/may not develop a Scizophrenia. (Not an actual diagnosis, seek medical professional for sure)
+8. (FUTURE) EEG Scan for Schizophrenia: Our EEG Scanner, will take a look at your EEG, and determine if your EEGs result may have a risk towards having Schizophrenia or not. (Not an actual diagnosis, seek medical professional for sure)
 
 > ## Requirement
 * Android Studio Flamingo
