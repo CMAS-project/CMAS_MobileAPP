@@ -37,7 +37,7 @@ Our team read the news about the raising concern regarding Indonesia’s mental 
 > ## Development Roadmap
 - [Kotlin](https://kotlinlang.org/)
 - [Glide](https://github.com/bumptech/glide)
-- [Retrofit](https://square.github.io/retrofit/).
+- [Retrofit](https://square.github.io/retrofit/)
 - [CameraX](https://developer.android.com/training/camerax)
 - [Preferences](https://developer.android.com/reference/android/preference/Preference)
 - [Navigation Component](https://developer.android.com/guide/navigation/navigation-getting-started)
