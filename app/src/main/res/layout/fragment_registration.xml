@@ -37,7 +37,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="@color/white"
                 android:padding="29dp">
 
                 <TextView
@@ -65,7 +64,6 @@
                         android:id="@+id/edt_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
                         android:textColor="@color/black"
                         android:hint="Nama"
                         android:inputType="textPersonName" />
@@ -88,7 +86,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/email"
-                        android:background="@color/white"
                         android:textColor="@color/black"
                         android:inputType="textEmailAddress" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -109,7 +106,6 @@
                         android:id="@+id/edt_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
                         android:textColor="@color/black"
                         android:hint="@string/password"
                         android:inputType="textPassword"/>
@@ -133,7 +129,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/password_confirm"
-                        android:background="@color/white"
                         android:textColor="@color/black"
                         android:inputType="textPassword"/>
 
