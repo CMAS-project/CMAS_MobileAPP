@@ -25,9 +25,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
         android:text="@string/chat"
-        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
         android:textAlignment="center"
-        android:textSize="26sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -40,7 +41,9 @@
         android:lineSpacingExtra="2dp"
         android:text="@string/chat_desc"
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_judul" />

@@ -39,6 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@color/white"
                 android:padding="29dp">
 
                 <TextView
@@ -57,12 +58,17 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="21dp"
                     app:endIconMode="clear_text"
+                    app:startIconTint="@color/grey_light"
+                    android:textColorHint="@color/grey_light"
+                    app:endIconTint="@color/grey"
                     app:startIconDrawable="@drawable/ic_person">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
                         android:hint="@string/email"
                         android:inputType="textEmailAddress" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -74,12 +80,17 @@
                     app:endIconMode="password_toggle"
                     android:layout_height="match_parent"
                     android:layout_marginTop="21dp"
+                    app:startIconTint="@color/grey_light"
+                    app:endIconTint="@color/grey"
+                    android:textColorHint="@color/grey_light"
                     app:startIconDrawable="@drawable/ic_lock">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
                         android:hint="@string/password"
                         android:inputType="textEmailAddress" />
                 </com.google.android.material.textfield.TextInputLayout>
