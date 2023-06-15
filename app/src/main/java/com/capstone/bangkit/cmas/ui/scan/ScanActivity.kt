@@ -119,9 +119,6 @@ class ScanActivity : AppCompatActivity() {
     private fun removeImage() {
         getFile = null
         viewModel.clearScannedImage()
-//        binding.apply {
-//            imgPreview.setImageResource(R.drawable.ic_preview)
-//        }
     }
 
     private fun startCamera() {

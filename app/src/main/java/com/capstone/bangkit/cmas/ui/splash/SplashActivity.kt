@@ -22,7 +22,10 @@ class SplashActivity : AppCompatActivity() {
 
         if (currentUser != null) {
             // kalau udah login
-            navigateToHomeActivity()
+            Handler().postDelayed({
+                navigateToHomeActivity()
+            }, 2000)
+
         } else {
             // Klo belum login
             Handler().postDelayed({

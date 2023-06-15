@@ -29,20 +29,9 @@ fun createFile(application: Application): File {
     return File(outputDirectory, "$timeStamp.jpg")
 }
 
-fun rotateBitmap(bitmap: Bitmap, isBackCamera: Boolean = false): Bitmap {
+fun rotateBitmap(bitmap: Bitmap, isBackCamera: Boolean = true): Bitmap {
     val matrix = Matrix()
     return if (isBackCamera) {
-        matrix.postRotate(90f)
-        Bitmap.createBitmap(
-            bitmap,
-            0,
-            0,
-            bitmap.width,
-            bitmap.height,
-            matrix,
-            true
-        )
-    } else {
         matrix.postRotate(-90f)
         matrix.postScale(-1f, 1f, bitmap.width / 2f, bitmap.height / 2f)
         Bitmap.createBitmap(
@@ -54,5 +43,37 @@ fun rotateBitmap(bitmap: Bitmap, isBackCamera: Boolean = false): Bitmap {
             matrix,
             true
         )
+    } else {
+        matrix.postRotate(90f, bitmap.width / 2f, bitmap.height / 2f)
+        matrix.postScale(1f, -1f)
+        Bitmap.createBitmap(
+            bitmap,
+            0,
+            0,
+            bitmap.width,
+            bitmap.height,
+            matrix,
+            true
+        )
     }
 }
+
+
+
+//        matrix.postScale(-1f, 1f, bitmap.width / 2f, bitmap.height / 2f)
+
+
+//    else {
+//        matrix.postRotate(90f)
+//        Bitmap.createBitmap(
+//            bitmap,
+//            0,
+//            0,
+//            bitmap.width,
+//            bitmap.height,
+//            matrix,
+//            true
+//        )
+//    }
+
+
