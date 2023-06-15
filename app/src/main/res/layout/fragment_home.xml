@@ -40,19 +40,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:text="@string/hello"
+                android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textSize="16sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="4dp"
+                android:lineSpacingExtra="1dp"
                 android:text="@string/welcome"
                 android:textColor="@color/white"
-                android:textSize="13sp" />
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp" />
         </LinearLayout>
 
         <ImageView
@@ -64,139 +64,302 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/menu_horizontal"
+        android:id="@+id/menu_vertical"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="18dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cek_lokasi"
-            android:layout_width="0dp"
-            android:layout_height="90dp"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:id="@+id/menu_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cek_lokasi"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:src="@drawable/ic_location"
-                    app:tint="@color/blue_500" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="@string/location"
-                    android:textSize="12sp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/chatbot"
-            android:layout_width="0dp"
-            android:layout_height="90dp"
-            android:layout_weight="1"
-            app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/ic_location"
+                        app:tint="@color/blue_500" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/location"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"
-                    android:src="@drawable/ic_chat"
-                    app:tint="@color/blue_500" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/chatbot"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="@string/chatbot"
-                    android:textSize="12sp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/article"
-            android:layout_width="0dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="8dp"
-            android:layout_weight="1"
-            app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/ic_chat"
+                        app:tint="@color/blue_500" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/chatbot"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:src="@drawable/ic_reflection"
-                    app:tint="@color/blue_500" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/article"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="@string/article"
-                    android:textSize="12sp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/scan"
-            android:layout_width="0dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="8dp"
-            android:layout_weight="1"
-            app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_reflection"
+                        app:tint="@color/blue_500" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/article"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_scan_menu"
-                    app:tint="@color/blue_500" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/scan"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="@string/scan"
-                    android:textSize="12sp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_scan_menu"
+                        app:tint="@color/blue_500" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/scan"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_horizontal_bawah"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cek_skizophrenia"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@color/grey"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/cek_kizophrenia"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/cek_skizophrenia"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/umur_otak"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@color/grey"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/cek_umur"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Umur Otak"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/deteksi_kejang"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@color/grey"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/deteksi_kejang"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/white"
+                        android:text="Deteksi Kejang"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/deteksi_skizophrenia"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@color/grey"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/deteksi_schizophrenia"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Deteksi Skizo"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -209,7 +372,7 @@
         android:layout_marginEnd="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_horizontal">
+        app:layout_constraintTop_toBottomOf="@+id/menu_vertical">
 
         <TextView
             android:layout_width="0dp"
@@ -218,7 +381,7 @@
             android:text="@string/article"
             android:textColor="@color/black"
             android:textSize="22sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
             app:layout_constraintStart_toStartOf="@+id/menu_horizontal"
             app:layout_constraintTop_toBottomOf="@+id/menu_horizontal" />
 
@@ -226,9 +389,10 @@
             android:id="@+id/seeMore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Baca lainnya"
+            android:text="@string/read_more"
             android:textColor="@color/blue"
             android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@+id/menu_horizontal"
             app:layout_constraintTop_toBottomOf="@+id/menu_horizontal" />
@@ -241,7 +405,7 @@
         android:layout_marginStart="12dp"
         android:paddingTop="12dp"
         android:layout_marginEnd="12dp"
-        android:paddingBottom="40dp"
+        android:layout_marginBottom="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"

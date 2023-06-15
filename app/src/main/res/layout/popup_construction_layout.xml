@@ -4,8 +4,8 @@
     android:layout_width="350dp"
     android:layout_height="400dp"
     app:cardCornerRadius="30dp"
-    android:backgroundTint="@color/white"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    android:backgroundTint="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:id="@+id/iv_emo"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/scared"
+            android:src="@drawable/work_in_progress"
             android:scaleType="centerCrop"
             android:layout_marginTop="18dp"/>
 
@@ -26,10 +26,10 @@
             android:id="@+id/tv_judul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/scared"
+            android:text="@string/coming_soon"
+            android:textStyle="bold"
             android:layout_marginTop="12dp"
             android:gravity="center"
-            android:fontFamily="@font/poppins_bold"
             android:textColor="@color/blue_500"
             android:textSize="24sp"/>
 
@@ -37,10 +37,9 @@
             android:id="@+id/tv_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/scared_desc"
+            android:text="@string/on_progress_desc"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:fontFamily="@font/poppins_regular"
             android:gravity="center"
             android:layout_marginTop="12dp"/>
 
@@ -48,9 +47,10 @@
             android:id="@+id/btn_ok"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ok"
-            android:fontFamily="@font/poppins_bold"
+            android:text="@string/siap"
+            android:textStyle="bold"
             android:layout_marginTop="12dp"/>
 
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>

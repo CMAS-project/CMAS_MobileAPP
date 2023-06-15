@@ -1,11 +1,15 @@
 package com.capstone.bangkit.cmas.ui.home
 
+import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -37,33 +41,33 @@ class HomeFragment : Fragment() {
         rvArticle = binding.rvArticle
         rvArticle.setHasFixedSize(true)
 
-//        list.addAll(getListArticle())
-//        showRecyclerView()
+        list.addAll(getListArticle())
+        showRecyclerView()
 
         return rootView
     }
 
-//    private fun showRecyclerView() {
-//        rvArticle.layoutManager = LinearLayoutManager(requireContext())
-//        val listArticle = ListItemArticleAdapter(viewModel.listArticle.value ?: emptyList())
-//        rvArticle.adapter = listArticle
-//    }
+    private fun showRecyclerView() {
+        rvArticle.layoutManager = LinearLayoutManager(requireContext())
+        val listArticle = ListItemArticleAdapter(list)
+        rvArticle.adapter = listArticle
+    }
 
-//    private fun getListArticle(): Collection<Article> {
-//        val id = resources.obtainTypedArray(R.array.id)
-//        val dataName = resources.getStringArray(R.array.data_judul)
-//        val dataDescription = resources.getStringArray(R.array.data_pengertian)
-//
-//        val listArticle = ArrayList<Article>()
-//        val limit = minOf(dataName.size, 3)
-//
-//        for (i in 0 until limit) {
-//            val article = Article(id.getResourceId(i, 0), dataName[i], dataDescription[i])
-//            listArticle.add(article)
-//        }
-//
-//        return listArticle
-//    }
+    private fun getListArticle(): Collection<Article> {
+        val id = resources.obtainTypedArray(R.array.id)
+        val dataName = resources.getStringArray(R.array.data_judul)
+        val dataDescription = resources.getStringArray(R.array.data_pengertian)
+
+        val listArticle = ArrayList<Article>()
+        val limit = minOf(dataName.size, 3)
+
+        for (i in 0 until limit) {
+            val article = Article(id.getResourceId(i, 0), dataName[i], dataDescription[i])
+            listArticle.add(article)
+        }
+
+        return listArticle
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -94,6 +98,19 @@ class HomeFragment : Fragment() {
                 val article = ArticleFragment()
                 replaceFragment(article)
             }
+            cekSkizophrenia.setOnClickListener {
+                showPopup()
+            }
+            umurOtak.setOnClickListener {
+                showPopup()
+            }
+            deteksiKejang.setOnClickListener {
+                showPopup()
+            }
+            deteksiSkizophrenia.setOnClickListener {
+                showPopup()
+            }
+
         }
     }
 
@@ -116,6 +133,18 @@ class HomeFragment : Fragment() {
         fragmentTransaction.replace(R.id.frame_layout, fragment)
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
+    }
+
+    private fun showPopup() {
+        val dialog = Dialog(requireContext())
+        dialog.setContentView(R.layout.popup_construction_layout)
+
+        val buttonOk = dialog.findViewById<Button>(R.id.btn_ok)
+
+        buttonOk.setOnClickListener {
+            dialog.dismiss() // Menutup dialog saat tombol "OK" ditekan
+        }
+        dialog.show()
     }
 
 

@@ -17,9 +17,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/notification"
+        android:fontFamily="@font/poppins_bold"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/white"
-        android:textStyle="bold"
         android:textSize="18sp"/>
 
 </androidx.appcompat.widget.Toolbar>

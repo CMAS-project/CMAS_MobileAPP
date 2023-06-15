@@ -16,12 +16,18 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:padding="12dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/rv_chat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:itemCount="10"
+        tools:listitem="@layout/message_item" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -32,7 +38,7 @@
         app:cardCornerRadius="12dp"
         app:cardElevation="8dp"
         android:layout_marginStart="12dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="10dp"
         android:layout_marginEnd="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,14 +52,16 @@
             android:padding="10dp">
 
             <EditText
+                android:id="@+id/edt_message"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="18dp"
                 android:layout_weight="1"
                 android:background="@color/transparant"
+                android:maxLines="3"
                 android:scrollbars="vertical"
                 android:inputType="textMultiLine"
-                android:hint="Ketik pesan" />
+                android:hint="@string/ketik_pesan" />
 
             <ImageView
                 android:id="@+id/btn_send"

@@ -1,11 +1,14 @@
 package com.capstone.bangkit.cmas.data.remote.retrofit
 
 import com.capstone.bangkit.cmas.data.remote.response.ArticleResponse
+import com.capstone.bangkit.cmas.data.remote.response.ChatbotResponse
 import com.capstone.bangkit.cmas.data.remote.response.HospitalResponse
 import com.capstone.bangkit.cmas.data.remote.response.ScanResponse
+import com.capstone.bangkit.cmas.model.ChatbotRequest
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Call
+import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.Multipart
 import retrofit2.http.POST
@@ -32,5 +35,10 @@ interface ApiService {
         @Part("label") label: RequestBody,
         @Part("value") value: RequestBody
     ): Call<ScanResponse>
+
+    @POST("chatbot")
+    fun chatbot(
+        @Body request: ChatbotRequest
+    ): Call <ChatbotResponse>
 
 }

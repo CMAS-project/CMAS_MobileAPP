@@ -27,14 +27,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:textStyle="bold"
             android:textSize="18sp"
+            android:fontFamily="@font/poppins_bold"
             android:text="@string/bot_name"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/gren_light"
+            android:fontFamily="@font/poppins_regular"
             android:text="@string/online"/>
     </LinearLayout>
 

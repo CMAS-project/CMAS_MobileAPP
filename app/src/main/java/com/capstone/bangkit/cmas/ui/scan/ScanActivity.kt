@@ -5,7 +5,6 @@ import android.app.Dialog
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.BitmapFactory
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -14,13 +13,12 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import com.capstone.bangkit.cmas.R
 import com.capstone.bangkit.cmas.data.remote.retrofit.ApiConfig
-import com.capstone.bangkit.cmas.data.remote.retrofit.ApiService
 import com.capstone.bangkit.cmas.databinding.ActivityScanBinding
 import com.capstone.bangkit.cmas.utils.rotateBitmap
 import java.io.File
