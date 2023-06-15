@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/welcomeCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
@@ -70,7 +70,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/welcomeCard">
 
         <LinearLayout
             android:id="@+id/menu_horizontal"
@@ -237,7 +237,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:background="@color/grey"
+                    android:background="@color/white"
                     android:orientation="vertical"
                     android:padding="10dp">
 
@@ -246,13 +246,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:src="@drawable/cek_kizophrenia"
-                        app:tint="@color/white" />
+                        app:tint="@color/grey_light" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:textColor="@color/white"
+                        android:textColor="@color/grey"
                         android:fontFamily="@font/poppins_regular"
                         android:text="@string/cek_skizophrenia"
                         android:textSize="12sp" />
@@ -270,7 +270,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:background="@color/grey"
+                    android:background="@color/white"
                     android:orientation="vertical"
                     android:padding="10dp">
 
@@ -279,13 +279,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="4dp"
                         android:src="@drawable/cek_umur"
-                        app:tint="@color/white" />
+                        app:tint="@color/grey" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:textColor="@color/white"
+                        android:textColor="@color/grey"
                         android:fontFamily="@font/poppins_regular"
                         android:text="Umur Otak"
                         android:textSize="12sp" />
@@ -305,7 +305,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:background="@color/grey"
+                    android:background="@color/white"
                     android:padding="10dp">
 
                     <ImageView
@@ -313,14 +313,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:src="@drawable/deteksi_kejang"
-                        app:tint="@color/white" />
+                        app:tint="@color/grey" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:fontFamily="@font/poppins_regular"
-                        android:textColor="@color/white"
+                        android:textColor="@color/grey"
                         android:text="Deteksi Kejang"
                         android:textSize="11sp" />
                 </LinearLayout>
@@ -339,7 +339,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:background="@color/grey"
+                    android:background="@color/white"
                     android:padding="10dp">
 
                     <ImageView
@@ -347,13 +347,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:src="@drawable/deteksi_schizophrenia"
-                        app:tint="@color/white" />
+                        app:tint="@color/grey" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:textColor="@color/white"
+                        android:textColor="@color/grey"
                         android:fontFamily="@font/poppins_regular"
                         android:text="Deteksi Skizo"
                         android:textSize="12sp" />

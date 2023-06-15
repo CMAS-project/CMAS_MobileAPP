@@ -3,24 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_onboarding"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/onBoardingFragment">
 
-    <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.capstone.bangkit.cmas.ui.splash.SplashFragment"
-        android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" >
-        <action
-            android:id="@+id/action_splashFragment_to_loginFragment"
-            app:destination="@id/loginFragment"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true"/>
-        <action
-            android:id="@+id/action_splashFragment_to_onBoardingFragment"
-            app:destination="@id/onBoardingFragment"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.capstone.bangkit.cmas.ui.login.LoginFragment"

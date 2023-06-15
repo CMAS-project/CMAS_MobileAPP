@@ -1,24 +1,24 @@
-package com.capstone.bangkit.cmas.ui.login
+package com.capstone.bangkit.cmas.ui.profile
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
 
-class LoginViewModel : ViewModel() {
+class ProfileViewModel: ViewModel() {
+
     private val firebaseAuth: FirebaseAuth = FirebaseAuth.getInstance()
 
     private val _isLoggedIn: MutableLiveData<Boolean> = MutableLiveData()
-    val isLoggedIn = _isLoggedIn
+    val isLoggedIn: LiveData<Boolean> = _isLoggedIn
 
     init {
         checkLoggedInState()
     }
 
-    fun login(email: String, password: String) {
-        firebaseAuth.signInWithEmailAndPassword(email, password)
-            .addOnCompleteListener { task ->
-                _isLoggedIn.value = task.isSuccessful
-            }
+    fun logout() {
+        firebaseAuth.signOut()
+        _isLoggedIn.value = false
     }
 
     private fun checkLoggedInState() {

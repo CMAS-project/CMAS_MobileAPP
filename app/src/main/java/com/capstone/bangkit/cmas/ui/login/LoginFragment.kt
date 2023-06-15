@@ -44,8 +44,7 @@ class LoginFragment : Fragment() {
         progressDialog = ProgressDialog(requireContext())
         progressDialog.setTitle("Tunggu sebentar...")
         progressDialog.setMessage("Ini mungkin membutuhkan waktu beberapa saat.")
-//        setAction()
-//        loginAction()
+
         action()
         observeViewModel()
     }
@@ -72,6 +71,10 @@ class LoginFragment : Fragment() {
             Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_registrationFragment)
         )
         edtPassword()
+
+        binding.ivGoogle.setOnClickListener {
+            Toast.makeText(requireContext(), "Layanan ini belum tersedia", Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun observeViewModel() {
@@ -81,44 +84,14 @@ class LoginFragment : Fragment() {
                 val intent = Intent(requireContext(), HomeActivity::class.java)
                 startActivity(intent)
                 requireActivity().finish()
-            }
-        }
-    }
-
-    private fun loginAction() {
-        binding.btnLogin.setOnClickListener {
-            val email = binding.edtEmail.text.toString()
-            val password = binding.edtPassword.text.toString()
-
-            if (email.isNotEmpty() && password.isNotEmpty()) {
-                progressDialog.show()
-                firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
-                    if (it.isSuccessful) {
-                        val intent = Intent(requireContext(), HomeActivity::class.java)
-                        startActivity(intent)
-                    } else {
-                        progressDialog.dismiss()
-                        Toast.makeText(
-                            requireContext(),
-                            R.string.auth_error_message,
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    }
-                }
             } else {
                 progressDialog.dismiss()
-                Toast.makeText(
-                    requireContext(),
-                    "Silahkan isi email dan passrword dahulu",
-                    Toast.LENGTH_SHORT
-                ).show()
+                if (binding.edtEmail.text?.isNotEmpty() == true && binding.edtPassword.text?.isNotEmpty() == true) {
+                    Toast.makeText(requireContext(), R.string.auth_error_message, Toast.LENGTH_SHORT).show()
+                }
+
             }
         }
-        binding.signUp.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_registrationFragment)
-        )
-        edtPassword()
-
     }
 
     override fun onDestroyView() {
@@ -126,44 +99,6 @@ class LoginFragment : Fragment() {
         _binding = null
     }
 
-
-    private fun setAction() {
-        binding.apply {
-            signUp.setOnClickListener(
-                Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_registrationFragment)
-            )
-            btnLogin.setOnClickListener {
-                if (edtEmail.text.isNullOrEmpty() && edtPassword.text.isNullOrEmpty()) {
-                    loginProcess()
-                } else {
-                    Toast.makeText(
-                        requireContext(),
-                        "Silahkan isi semua data terlebih dahulu",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
-            }
-        }
-//        edtEmail()
-        edtPassword()
-    }
-
-
-    private fun loginProcess() {
-        val email = binding.edtEmail.text.toString()
-        val password = binding.edtPassword.text.toString()
-
-        firebaseAuth.signInWithEmailAndPassword(email, password)
-            .addOnSuccessListener {
-                startActivity(Intent(requireContext(), HomeActivity::class.java))
-            }
-            .addOnFailureListener { error ->
-                Toast.makeText(requireContext(), error.localizedMessage, Toast.LENGTH_SHORT).show()
-            }
-            .addOnCompleteListener {
-                progressDialog.dismiss()
-            }
-    }
 
     private fun edtPassword() {
         binding.edtPassword.addTextChangedListener(object : TextWatcher {

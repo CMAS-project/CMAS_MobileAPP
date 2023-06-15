@@ -58,7 +58,7 @@ class RegistrationFragment : Fragment() {
     private fun setAction() {
 //        setLoading(true)
         binding.apply {
-            binding.btnDaftar.setOnClickListener {
+            btnDaftar.setOnClickListener {
                 val name = binding.edtName.text.toString()
                 val email = binding.edtEmail.text.toString()
                 val password = binding.edtPassword.text.toString()
@@ -103,9 +103,14 @@ class RegistrationFragment : Fragment() {
                         .show()
                 }
             }
-            binding.login.setOnClickListener(
+
+            login.setOnClickListener(
                 Navigation.createNavigateOnClickListener(R.id.action_registrationFragment_to_loginFragment)
             )
+
+            ivGoogle.setOnClickListener {
+                Toast.makeText(requireContext(), "Layanan ini belum tersedia", Toast.LENGTH_SHORT).show()
+            }
 
         }
 //        edtEmail()

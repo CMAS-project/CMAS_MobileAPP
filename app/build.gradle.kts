@@ -61,6 +61,8 @@ dependencies {
     implementation("com.google.firebase:firebase-bom:32.1.0")
     implementation("com.google.firebase:firebase-analytics-ktx:21.3.0")
     implementation("com.google.firebase:firebase-auth-ktx:22.0.0")
+    implementation("com.google.firebase:firebase-auth:22.0.0")
+    implementation("com.google.firebase:firebase-database-ktx:20.2.2")
 
 
 // Camera
@@ -87,7 +89,6 @@ dependencies {
 // Glide
     implementation("com.github.bumptech.glide:glide:4.15.0")
     implementation("androidx.datastore:datastore-core:1.0.0")
-    implementation("com.google.firebase:firebase-auth:22.0.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.13.0")
 
 // DataStore
