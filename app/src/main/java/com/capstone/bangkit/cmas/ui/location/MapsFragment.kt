@@ -47,7 +47,7 @@ class MapsFragment : Fragment() {
         mapFragment?.getMapAsync(callback)
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireContext())
 
-        viewModel = ViewModelProvider(this).get(MapsViewModel::class.java)
+        viewModel = ViewModelProvider(this)[MapsViewModel::class.java]
         viewModel.nearbyHospitals.observe(viewLifecycleOwner) { hospitals ->
             showNearbyHospitalsOnMap(hospitals)
         }

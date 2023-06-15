@@ -1,10 +1,9 @@
 package com.capstone.bangkit.cmas.ui.chatbot
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
-import androidx.lifecycle.ViewModelProvider
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.capstone.bangkit.cmas.adapter.MessageAdapter
 import com.capstone.bangkit.cmas.data.remote.retrofit.ApiConfig

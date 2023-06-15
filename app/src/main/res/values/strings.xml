@@ -55,7 +55,7 @@
     <string name="scan_description">Hai Sobat CMAS! Silahkan Foto Wajah untuk cek tingkat Depresi anda</string>
     <string name="cek_yuk">Cek Yuk</string>
     <string name="online">Online</string>
-    <string name="bot_name">EmoWell</string>
+    <string name="bot_name">Pandora</string>
 
     // Emotion
     <string name="happy">Wah, senang sekali melihatmu begitu ceria!</string>
@@ -87,8 +87,8 @@
     <string name="coming_soon">Segera Hadir</string>
     <string name="sample_message">This is a sample message that will appear</string>
     <string name="ketik_pesan">Ketik pesan</string>
-    <string name="emowel_desc">EmoWell siap mendengarkan cerita tetang kesehatan mentalmu</string>
-    <string name="yuk_cerita_desc">Yuk ceritakan masalah mentalmu ke EmoWell</string>
+    <string name="emowel_desc">Pandora siap mendengarkan cerita tetang kesehatan mentalmu</string>
+    <string name="yuk_cerita_desc">Yuk ceritakan masalah mentalmu ke Pandora</string>
     <string name="kamu_punya_masalah">Kamu punya masalah?</string>
 
     // Data Artikel
@@ -121,23 +121,4 @@
         <item>Cyberbullying (perundungan dunia maya) ialah bullying/perundungan dengan menggunakan teknologi digital. Hal ini dapat terjadi di media sosial, platform chatting, platform bermain game, dan ponsel. Adapun menurut Think Before Text, cyberbullying adalah perilaku agresif dan bertujuan yang dilakukan suatu kelompok atau individu, menggunakan media elektronik, secara berulang-ulang dari waktu ke waktu, terhadap seseorang yang dianggap tidak mudah melakukan perlawanan atas tindakan tersebut. Jadi, terdapat perbedaan kekuatan antara pelaku dan korban. Perbedaan kekuatan dalam hal ini merujuk pada sebuah persepsi kapasitas fisik dan mental.</item>
     </string-array>
 
-    <string-array name="data_penyebab">
-        <item>Sulit untuk mengenali satu penyebab utama dari kecemasan. Ketika menghadapi situasi yang menimbulkan stres, akan ada semacam alarm peringatan yang menyala di otak kita dan menandakan ada sesuatu yang tidak beres dan perlu kita hadapi. Supaya situasi sulit ini lekas berakhir, otak kita akan membuat kita lebih waspada, fokus hanya pada situasi itu, bahkan memompa lebih banyak darah ke kaki agar kita dapat melarikan diri.</item>
-
-        <item>Depresi bisa terjadi sebagai reaksi terhadap suatu peristiwa, misalnya penganiayaan, kekerasan di sekolah, kematian orang terdekat, atau masalah keluarga seperti kekerasan di dalam rumah tangga ataupun perpisahan orang tua. Seseorang bisa mengalami depresi setelah merasa stres untuk waktu yang lama. Depresi juga bisa diturunkan di dalam keluarga. Selain itu, ada kalanya kita tidak tahu mengapa depresi timbul.</item>
-
-        <item>Pengalaman menghadapi stres pada anak tidak selalu sama dengan orang dewasa. . Di kalangan orang dewasa, stres terkait pekerjaan sangat umum terjadi. Namun, bagi anak, stres terjadi ketika mereka tidak bisa menghadapi situasi yang mengandung ancaman, situasi sulit, atau situasi yang menyakitkan, antara lain: \nPikiran atau perasaan negatif tentang diri sendiri\nPerubahan fisik, misalnya permulaan pubertas\nBeban belajar, misalnya ulangan atau bertambahnya pekerjaan rumah seiring waktu\nMasalah dengan teman di sekolah atau lingkungan sosial\nPerubahan besar, seperti pindah rumah, pindah sekolah, atau perpisahan orang tua\nPenyakit kronis, masalah keuangan di keluarga, atau kematian orang terdekat\nSituasi rumah atau lingkungan sekitar yang tidak aman\n</item>
-
-        <item>Penyebab serangan panik tidak selalu jelas, baik pada anak-anak maupun orang dewasa. Yang diketahui, kepanikan dapat dipicu oleh rasa cemas tentang sesuatu atau saat sedang mengalami situasi sulit dan stres, antara lain: \nCemas karena ada pengalaman tidak menyenangkan di rumah atau sekolah\nStres karena ujian sekolah, masalah pada hubungan pertemanan atau dengan orang terdekat lainya\nKematian orang terdekat\nPengalaman mengerikan, seperti penganiayaan atau penelantaran\nPengalaman yang melibatkan kekerasan\n</item>
-
-        <item>Apa itu cyberbullying?</item>
-    </string-array>
-
-    <string-array name="data_gejala">
-        <item>Apa itu kecemasan?</item>
-        <item>Apa itu kecemasan?</item>
-        <item>Apa itu serangan panik?</item>
-        <item>Apa itu cyberbullying?</item>
-        <item>Airbus A319neo</item>
-    </string-array>
 </resources>

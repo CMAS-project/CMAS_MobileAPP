@@ -34,7 +34,7 @@ class MapsViewModel : ViewModel() {
 
             override fun onFailure(call: Call<HospitalResponse>, t: Throwable) {
                 // Tangani kegagalan jaringan
-                Log.e(MapsViewModel.TAG, "Failure : ${t.message.toString()}")
+                Log.e(TAG, "Failure : ${t.message.toString()}")
             }
         })
     }

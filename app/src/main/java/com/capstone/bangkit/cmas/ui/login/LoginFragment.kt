@@ -6,18 +6,17 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Patterns
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
 import com.capstone.bangkit.cmas.R
 import com.capstone.bangkit.cmas.databinding.FragmentLoginBinding
 import com.capstone.bangkit.cmas.ui.home.HomeActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.userProfileChangeRequest
 
 class LoginFragment : Fragment() {
 
@@ -61,7 +60,11 @@ class LoginFragment : Fragment() {
                 viewModel.login(email, password)
             } else {
                 progressDialog.dismiss()
-                Toast.makeText(requireContext(), "Silahkan isi email dan password dahulu", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(),
+                    "Silahkan isi email dan password dahulu",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
 
@@ -95,12 +98,20 @@ class LoginFragment : Fragment() {
                         startActivity(intent)
                     } else {
                         progressDialog.dismiss()
-                        Toast.makeText(requireContext(), R.string.auth_error_message, Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            requireContext(),
+                            R.string.auth_error_message,
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
             } else {
                 progressDialog.dismiss()
-                Toast.makeText(requireContext(), "Silahkan isi email dan passrword dahulu", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(),
+                    "Silahkan isi email dan passrword dahulu",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
         binding.signUp.setOnClickListener(
@@ -125,7 +136,11 @@ class LoginFragment : Fragment() {
                 if (edtEmail.text.isNullOrEmpty() && edtPassword.text.isNullOrEmpty()) {
                     loginProcess()
                 } else {
-                    Toast.makeText(requireContext(), "Silahkan isi semua data terlebih dahulu", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        requireContext(),
+                        "Silahkan isi semua data terlebih dahulu",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
         }
@@ -159,7 +174,8 @@ class LoginFragment : Fragment() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 val password = s?.toString() ?: ""
                 if (password.length < 8) {
-                    binding.txtInputLayoutPassword.error = getString(R.string.password_minimum_character)
+                    binding.txtInputLayoutPassword.error =
+                        getString(R.string.password_minimum_character)
                 } else {
                     binding.txtInputLayoutPassword.error = null
                 }

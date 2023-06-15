@@ -1,10 +1,9 @@
 package com.capstone.bangkit.cmas.ui.profile
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
-import androidx.navigation.Navigation.findNavController
+import androidx.appcompat.app.AppCompatActivity
 import com.capstone.bangkit.cmas.R
 import com.capstone.bangkit.cmas.databinding.ActivityProfileBinding
 import com.capstone.bangkit.cmas.ui.about.AboutActivity

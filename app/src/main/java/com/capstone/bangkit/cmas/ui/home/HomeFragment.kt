@@ -3,24 +3,22 @@ package com.capstone.bangkit.cmas.ui.home
 import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.capstone.bangkit.cmas.R
 import com.capstone.bangkit.cmas.adapter.ListItemArticleAdapter
-import com.capstone.bangkit.cmas.databinding.FragmentHomeBinding
 import com.capstone.bangkit.cmas.data.local.entity.Article
+import com.capstone.bangkit.cmas.databinding.FragmentHomeBinding
+import com.capstone.bangkit.cmas.ui.article.ArticleFragment
 import com.capstone.bangkit.cmas.ui.chatbot.ChatbotFragment
 import com.capstone.bangkit.cmas.ui.location.MapsFragment
 import com.capstone.bangkit.cmas.ui.profile.ProfileActivity
-import com.capstone.bangkit.cmas.ui.article.ArticleFragment
 import com.capstone.bangkit.cmas.ui.scan.ScanActivity
 
 class HomeFragment : Fragment() {

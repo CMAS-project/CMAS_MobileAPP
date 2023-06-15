@@ -1,6 +1,5 @@
 package com.capstone.bangkit.cmas.ui.chatbot
 
-import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -34,12 +33,16 @@ class ChatbotViewModel(private val apiService: ApiService): ViewModel() {
                         chatbotAdapter.addMessage(botMessage)
                     }
                 } else {
-
+                    val errorMessage = "Error: " + response.code().toString()
+                    val errorBotMessage = ChatMessage(errorMessage, ChatMessage.Type.BOT)
+                    chatbotAdapter.addMessage(errorBotMessage)
                 }
             }
 
             override fun onFailure(call: Call<ChatbotResponse>, t: Throwable) {
-//                _response.value = "Gagal terkoneksi dengan EmoWell"
+                val errorMessage = "Network Error: " + t.message
+                val errorBotMessage = ChatMessage(errorMessage, ChatMessage.Type.BOT)
+                chatbotAdapter.addMessage(errorBotMessage)
             }
 
         })

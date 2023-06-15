@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.capstone.bangkit.cmas.data.remote.response.ChatbotResponse
 import com.capstone.bangkit.cmas.databinding.MessageItemBinding
 import com.capstone.bangkit.cmas.utils.ChatMessage
 
